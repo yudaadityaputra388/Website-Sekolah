@@ -4,7 +4,7 @@
 
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = 'https://website-sekolah-d4to.onrender.com/api';
 
 export const getBerita = async () => {
   const response = await axios.get(`${BASE_URL}/berita`);
