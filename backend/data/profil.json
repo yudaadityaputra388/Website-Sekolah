@@ -1,0 +1,10 @@
+[
+  { "label": "Nama Sekolah", "value": "SMA Contoh" },
+  { "label": "NPSN", "value": "12345678" },
+  { "label": "Alamat", "value": "Jl. Pendidikan No. 10, Bandar Lampung" },
+  { "label": "Akreditasi", "value": "A" },
+  { "label": "Tahun Berdiri", "value": "1985" },
+  { "label": "Kepala Sekolah", "value": "Drs. Ahmad Suryadi, M.Pd." },
+  { "label": "Jumlah Rombel", "value": "18 kelas" },
+  { "label": "Status", "value": "Negeri" }
+]

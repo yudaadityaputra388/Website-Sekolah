@@ -1,0 +1,228 @@
+/* App.css - Styling global untuk seluruh website sekolah */
+
+:root {
+  --color-primary: #1d4ed8;
+  --color-primary-dark: #1e3a8a;
+  --color-bg: #f8fafc;
+  --color-text: #1e293b;
+  --color-card-bg: #ffffff;
+  --color-border: #e2e8f0;
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-primary-dark);
+  color: white;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  transition: background-color 0.2s ease; /* transisi halus saat hover/active - poin "interaktif" */
+}
+
+.navbar-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.navbar-menu a.menu-active {
+  background-color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* ===== Layout Umum ===== */
+main {
+  min-height: 80vh;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.page h1 {
+  margin-bottom: 0.5rem;
+  color: var(--color-primary-dark);
+}
+
+.page h2 {
+  margin: 1.5rem 0 1rem;
+  color: var(--color-primary-dark);
+}
+
+/* ===== Statistik Cards (Beranda) ===== */
+.statistik-cards {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  flex: 1;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.stat-label {
+  color: #64748b;
+}
+
+/* ===== Berita (Beranda) ===== */
+.berita-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.berita-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.berita-tanggal {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 0.25rem 0 0.5rem;
+}
+
+/* ===== Galeri (Beranda preview & halaman Galeri) ===== */
+.galeri-grid,
+.galeri-full-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.galeri-placeholder {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: white;
+  border-radius: var(--radius);
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+.galeri-kategori {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* ===== Tabel Profil Sekolah ===== */
+.profil-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 2rem;
+}
+
+.profil-table th,
+.profil-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.profil-table th {
+  width: 200px;
+  background-color: #f1f5f9;
+}
+
+.visi-misi ul {
+  padding-left: 1.5rem;
+}
+
+.visi-misi li {
+  margin-bottom: 0.4rem;
+}
+
+/* ===== Ekstrakurikuler ===== */
+.ekskul-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.ekskul-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  transition: transform 0.2s ease; /* efek interaktif saat hover */
+}
+
+.ekskul-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--color-primary-dark);
+  color: white;
+  margin-top: 2rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .navbar-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .statistik-cards {
+    flex-direction: column;
+  }
+}

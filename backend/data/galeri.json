@@ -1,0 +1,8 @@
+[
+  { "id": 1, "judul": "Upacara Bendera", "kategori": "Kegiatan Rutin" },
+  { "id": 2, "judul": "Lomba Cerdas Cermat", "kategori": "Prestasi" },
+  { "id": 3, "judul": "Ekstrakurikuler Basket", "kategori": "Ekstrakurikuler" },
+  { "id": 4, "judul": "Perpustakaan Sekolah", "kategori": "Fasilitas" },
+  { "id": 5, "judul": "Laboratorium Komputer", "kategori": "Fasilitas" },
+  { "id": 6, "judul": "Bakti Sosial", "kategori": "Kegiatan Sosial" }
+]
